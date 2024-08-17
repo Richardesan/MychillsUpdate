@@ -7,7 +7,7 @@ function App() {
     <>
       <CssBaseline />
       <div style={{ padding: "20px" }}>
-        <Button variant="solid">Hello, Joy UI!</Button>
+        <Button variant="solid">Hello, Chills Room!</Button>
       </div>
     </>
   );
