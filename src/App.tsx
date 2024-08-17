@@ -1,14 +1,15 @@
-import { CssBaseline, Button } from "@mui/joy";
+import { Box } from "@mui/joy";
 
 import "./App.css";
+// import NavBar from "./UI/NavBar/NavBar";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <>
-      <CssBaseline />
-      <div style={{ padding: "20px" }}>
-        <Button variant="solid">Hello, Chills Room!</Button>
-      </div>
+      <Box sx={{ background: "black" }}>
+        <Header/>
+      </Box>
     </>
   );
 }
