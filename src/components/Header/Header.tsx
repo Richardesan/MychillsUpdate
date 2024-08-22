@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/joy";
 import NavBar from "../../UI/NavBar/NavBar";
-import bg from "../../assets/background.png";
-import logo from "../../assets/chillsLogo.png";
+import logo from "../../assets/bgIogo.png";
 import Buttons from "../../UI/Button/Buttons";
 
 const ButtonsMenu = () => {
@@ -25,7 +24,11 @@ const ButtonsMenu = () => {
           background="rgba(101, 175, 186, 1)"
           borderColor="transparent"
         />
-        <Buttons text="Join Us " background="transparent" borderColor="white" />
+        <Buttons
+          text="Join Us "
+          background="transparent"
+          borderColor="white"
+        />
       </Box>
 
       {/* // Button Menu for large screens */}
@@ -55,14 +58,7 @@ const ButtonsMenu = () => {
 
 const Header = () => {
   return (
-    <Box
-      sx={{
-        width: "100%",
-        backgroundImage: `url(${bg})`,
-        backgroundSize: "contain",
-        position: "relative", // Ensure the container is positioned relatively
-      }}
-    >
+    <Box>
       <NavBar />
       <Box
         id="header"
@@ -101,7 +97,6 @@ const Header = () => {
             py: { xl: "40px" },
             zIndex: 2, // Ensure the text is above the image
             position: "relative",
-            
           }}
         >
           <Box

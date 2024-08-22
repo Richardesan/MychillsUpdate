@@ -9,7 +9,7 @@ const Logo = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "start",
-        width: { xs: "100%", sm: "25%" },
+        // width: { xs: "100%" },
         pt: { xs: 3, sm: 0, md: 0, lg: 0, xl: 0 },
 
         "&:hover": {

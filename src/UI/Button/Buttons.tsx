@@ -2,12 +2,21 @@ import Button from "@mui/joy/Button";
 import Box from "@mui/joy/Box";
 import { Typography } from "@mui/joy";
 
-const Buttons = (props: any) => {
+
+interface Props {
+  borderColor: string;
+  text: string;
+  background: string;
+  endDecorator?: React.ReactNode;
+
+}
+
+const Buttons = (props: Props) => {
   return (
     <Box
       sx={{
         display: "flex",
-        justifyContent: "start",
+        justifyContent: "space-between",
         borderRadius: "70px",
         border: "0.8px solid ",
         borderColor: `${props.borderColor}`,
@@ -25,7 +34,9 @@ const Buttons = (props: any) => {
     >
       <Button
         sx={{
+          display: "flex",
           textAlign: "center",
+          justifyContent: "space-between",
           color: "rgba(255, 255, 255, 1)",
           backgroundColor: `${props.background}`,
           width: "100%",
@@ -38,7 +49,6 @@ const Buttons = (props: any) => {
             backgroundColor: `${props.background}`,
           },
           fontFamily: "DM Sans",
-
         }}
       >
         <Typography
@@ -51,6 +61,8 @@ const Buttons = (props: any) => {
         >
           {props.text}
         </Typography>
+
+        
       </Button>
     </Box>
   );

@@ -238,11 +238,27 @@ const NavBar = () => {
           width: { xs: "100%", sm: "90%" },
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-between",
+          // justifyContent: "space-between",
           textAlign: "center",
         }}
       >
-        <Logo />
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "start",
+            width: { xs: "100%", sm: "25%" },
+            pt: { xs: 3, sm: 0, md: 0, lg: 0, xl: 0 },
+
+            "&:hover": {
+              textDecoration: "none",
+            },
+          }}
+        >
+          {" "}
+          <Logo />
+        </Box>
+
         <NavLinks />
         <MintButton />
       </Box>
