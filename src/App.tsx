@@ -1,14 +1,18 @@
 import { Box } from "@mui/joy";
-import bg from "../src/assets/background.png";
-
 import "./App.css";
-// import NavBar from "./UI/NavBar/NavBar";
-import Header from "./components/Header/Header";
-import { Mission } from "./components/Mission/Mission";
-import { Values } from "./components/Values/Values";
-import Teams from "./components/Team/Teams";
-import FAQ from "./components/FAQ/FAQ";
-import Footer from "./components/Footer/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Carousel from "./UI/Carousel/Carousel";
+import Home from "./pages/Home/Home";
+import { EmblaOptionsType } from "embla-carousel";
+import bg from "../src/assets/background.png";
+import Layout from "./components/Layout/Layout";
+import Teams from "./pages/Team/Teams";
+import Partners from "./pages/Partners/Partners";
+import Gamer from "./pages/Gamer/Gamer";
+
+const OPTIONS: EmblaOptionsType = { loop: true };
+const SLIDE_COUNT = 5;
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 function App() {
   return (
@@ -23,12 +27,18 @@ function App() {
           backgroundRepeat: "repeat",
         }}
       >
-        <Header />
-        <Mission />
-        <Values />
-        <Teams />
-        <FAQ />
-        <Footer />
+        {" "}
+        <Router>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/team" element={<Teams />} />
+              <Route path="/partners" element={<Partners />} />
+              <Route path="/gamer" element={<Gamer />} />
+            </Routes>
+          </Layout>
+        </Router>
+        {/* <Carousel slides={SLIDES} options={OPTIONS} /> */}
       </Box>
     </>
   );

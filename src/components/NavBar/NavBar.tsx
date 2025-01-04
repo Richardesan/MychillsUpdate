@@ -11,6 +11,7 @@ import { IoCloseCircleOutline } from "react-icons/io5";
 import { ListItemText } from "@mui/material";
 import Menu from "../../assets/menu.png";
 import Logo from "../../UI/Logo/Logo";
+import { NavLink } from "react-router-dom";
 // import { Link as RouterLink } from "react-router-dom";
 // import { HashLink } from "react-router-hash-link";
 
@@ -18,11 +19,9 @@ import Logo from "../../UI/Logo/Logo";
 const links = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Teams", path: "/contact" },
-  { name: "Partner", path: "#faq" },
-  { name: "Community", path: "/contact" },
-
-  // Add more links as needed
+  { name: "Teams", path: "/team" },
+  { name: "Partner", path: "/partners" },
+  { name: "Community", path: "/gamer" },
 ];
 
 const NavLinks = () => {
@@ -161,51 +160,39 @@ const NavLinks = () => {
           backgroundColor: "black",
         }}
       >
-        {links.map((link) => (
-          <Link
-            // component={RouterLink}
-            // to={link.path}
-            key={link.name}
-            sx={{
-              color: "#fafafa",
-              textDecoration: "none",
-              fontSize: {
-                xs: "15px",
-                sm: "10px",
-                md: "12px",
-                lg: "16px",
-                xl: "20px",
-              },
-              fontWeight: "500",
-              lineHeight: "20px",
-              transition: "all 0.4s ease",
-              border:
-                activeLink === link.name ? "1px solid transparent" : "none",
-              borderRadius: "40px",
-              backgroundColor:
-                activeLink === link.name
-                  ? "rgba(101, 175, 186, 1)"
-                  : "transparent",
-              px: "24px",
-              //   mx: "10px",
-              py: activeLink === link.name ? "10px" : "0px",
-              gap: activeLink === link.name ? "10px" : "0px",
-              //   width: "83px",
-              height: "30px",
-              display: "flex",
-              textAlign: "center",
-              justifyContent: "center",
-              "&:hover": {
-                textDecoration: "none",
-                // transform: "scale(1.3)",
-                // backgroundColor: "transparent",
-              },
-              fontFamily: "Montserrat",
-            }}
-            onClick={() => handleLinkClick(link.name)}
-          >
-            {link.name}
-          </Link>
+       {links.map((link) => (
+        <NavLink
+          to={link.path} // Link to the specified route
+          key={link.name}
+          style={({ isActive }) => ({
+            color: "#fafafa",
+            fontSize: {
+              xs: "15px",
+              sm: "10px",
+              md: "16px",
+            },
+            fontWeight: "600",
+            lineHeight: "19.5px",
+            transition: "all 0.4s ease",
+            border: isActive ? "1px solid transparent" : "none",
+            borderRadius: "40px",
+            backgroundColor: isActive
+              ? "rgba(101, 175, 186, 1)"
+              : "transparent",
+            padding: "14px 24px",
+            textAlign: "center",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            fontFamily: "Montserrat",
+            textDecoration: "none",
+            height: "30px",
+            gap: isActive ? "10px" : "0px",
+          })}
+          onClick={() => handleLinkClick(link.name)}
+        >
+          {link.name}
+        </NavLink>
         ))}
       </Box>
     </>

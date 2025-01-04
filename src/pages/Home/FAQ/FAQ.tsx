@@ -1,8 +1,7 @@
 import { AccordionGroup, Box, accordionSummaryClasses } from "@mui/joy";
-import AccordionIndicator from "../../UI/Accordion/Accordion";
+import AccordionIndicator from "../../../UI/Accordion/Accordion";
 import Typography from "@mui/joy/Typography";
-import logo from "../../assets/bgIogo.png";
-
+import logo from "../../../assets/bgIogo.png";
 
 const faq = [
   {
@@ -53,7 +52,6 @@ const FAQ = () => {
         alignItems: "center",
         textAlign: "center",
         position: "relative",
-
       }}
     >
       {/* Overlay Image */}
@@ -157,7 +155,7 @@ const FAQ = () => {
                 borderRadius: "24px",
                 backgroundColor: "rgba(101, 175, 186, 1)",
               },
-             
+
               [`& [aria-expanded="true"] .${accordionSummaryClasses.indicator}`]:
                 {
                   transform: "rotate(180deg)",
@@ -167,7 +165,7 @@ const FAQ = () => {
                 },
               [`& .${accordionSummaryClasses.button}`]: {
                 paddingBlock: "1rem",
-                
+
                 "&:hover": {
                   backgroundColor: "transparent !important",
                   textDecoration: "none",

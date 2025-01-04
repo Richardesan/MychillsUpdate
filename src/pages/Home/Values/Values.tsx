@@ -1,9 +1,9 @@
 import { Box, Typography } from "@mui/joy";
 import ValueCards from "./ValuesCard";
-import inclusive from "../../assets/inclusive.png";
-import creative from "../../assets/creative.png";
-import innovate from "../../assets/innovate.png";
-import collab from "../../assets/collab.png";
+import inclusive from "../../../assets/inclusive.png";
+import creative from "../../../assets/creative.png";
+import innovate from "../../../assets/innovate.png";
+import collab from "../../../assets/collab.png";
 
 export function Values() {
   return (
@@ -58,6 +58,7 @@ export function Values() {
           justifyContent: "center",
           alignItems: { xs: "start", sm: "center" },
           gap: 11,
+          filter: "drop-shadow(-1px 10px 150px rgba(101, 171, 162, 1))",
         }}
       >
         <Box

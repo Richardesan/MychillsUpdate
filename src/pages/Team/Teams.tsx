@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/joy";
 import TeamTogggle from "./TeamToggle";
-import TeamPics from "./TeamPic";
+
 
 export default function Teams() {
   return (
@@ -81,7 +81,6 @@ export default function Teams() {
       >
         <TeamTogggle />
       </Box>
-      <TeamPics />
     </Box>
   );
 }

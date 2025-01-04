@@ -67,7 +67,7 @@ const teamMembers: TeamMember[] = [
   },
 ];
 
-const TeamPics: React.FC = () => {
+const CoreTeam: React.FC = () => {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
 
   const handleClick = (member: TeamMember) => {
@@ -203,7 +203,9 @@ const TeamPics: React.FC = () => {
             </Typography>
             {selectedMember?.id === member.id && (
               <Box sx={{ marginTop: "10px", color: "white" }}>
-                <Typography>{member.details}</Typography>
+                <Typography sx={{ color: "white" }}>
+                  {member.details}
+                </Typography>
               </Box>
             )}
           </Card>
@@ -213,4 +215,4 @@ const TeamPics: React.FC = () => {
   );
 };
 
-export default TeamPics;
+export default CoreTeam;

@@ -9,9 +9,7 @@ const Logo = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "start",
-        // width: { xs: "100%" },
         pt: { xs: 3, sm: 0, md: 0, lg: 0, xl: 0 },
-
         "&:hover": {
           textDecoration: "none",
         },
@@ -52,7 +50,7 @@ const Logo = () => {
           lineHeight: { sm: "28.64px" },
         }}
       >
-        The Chills Room{" "}
+        The Chills Room
       </Typography>
     </Link>
   );
