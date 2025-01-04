@@ -164,31 +164,31 @@ const NavLinks = () => {
         <NavLink
           to={link.path} // Link to the specified route
           key={link.name}
-          style={({ isActive }) => ({
-            color: "#fafafa",
-            fontSize: {
-              xs: "15px",
-              sm: "10px",
-              md: "16px",
-            },
-            fontWeight: "600",
-            lineHeight: "19.5px",
-            transition: "all 0.4s ease",
-            border: isActive ? "1px solid transparent" : "none",
-            borderRadius: "40px",
-            backgroundColor: isActive
-              ? "rgba(101, 175, 186, 1)"
-              : "transparent",
-            padding: "14px 24px",
-            textAlign: "center",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            fontFamily: "Montserrat",
-            textDecoration: "none",
-            height: "30px",
-            gap: isActive ? "10px" : "0px",
-          })}
+          // style={({ isActive }) => ({
+          //   color: "#fafafa",
+          //   fontSize: {
+          //     xs: "15px",
+          //     sm: "10px",
+          //     md: "16px",
+          //   },
+          //   fontWeight: "600",
+          //   lineHeight: "19.5px",
+          //   transition: "all 0.4s ease",
+          //   border: isActive ? "1px solid transparent" : "none",
+          //   borderRadius: "40px",
+          //   backgroundColor: isActive
+          //     ? "rgba(101, 175, 186, 1)"
+          //     : "transparent",
+          //   padding: "14px 24px",
+          //   textAlign: "center",
+          //   display: "flex",
+          //   justifyContent: "center",
+          //   alignItems: "center",
+          //   fontFamily: "Montserrat",
+          //   textDecoration: "none",
+          //   height: "30px",
+          //   gap: isActive ? "10px" : "0px",
+          // })}
           onClick={() => handleLinkClick(link.name)}
         >
           {link.name}

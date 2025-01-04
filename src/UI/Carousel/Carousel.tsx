@@ -98,7 +98,7 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
                   </Typography>
 
                   {/* Paragraph */}
-                  <Typography level="body2" sx={{ mb: 3 }}>
+                  <Typography  sx={{ mb: 3 }}>
                     {slide.paragraph}
                   </Typography>
                 </CardContent>
@@ -118,10 +118,10 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
                     sx={{ width: 36, height: 36, mr: 1 }}
                   />
                   <Box>
-                    <Typography level="body2" sx={{ fontWeight: 'bold' }}>
+                    <Typography  sx={{ fontWeight: 'bold' }}>
                       {slide.name}
                     </Typography>
-                    <Typography level="body3">{slide.title}</Typography>
+                    <Typography >{slide.title}</Typography>
                   </Box>
                 </Box>
               </Card>
