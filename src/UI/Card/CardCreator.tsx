@@ -1,7 +1,7 @@
 import Card from "@mui/joy/Card";
 import CardContent from "@mui/joy/CardContent";
 import Typography from "@mui/joy/Typography";
-import Buttons from "../Button/Buttons";
+// import Buttons from "../Button/Buttons";
 import ButtonCreator from "../Button/ButtonCreator";
 import { Box } from "@mui/joy";
 
