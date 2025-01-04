@@ -3,16 +3,16 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import Carousel from "./UI/Carousel/Carousel";
 import Home from "./pages/Home/Home";
-import { EmblaOptionsType } from "embla-carousel";
+// import { EmblaOptionsType } from "embla-carousel";
 import bg from "../src/assets/background.png";
 import Layout from "./components/Layout/Layout";
 import Teams from "./pages/Team/Teams";
 import Partners from "./pages/Partners/Partners";
 import Gamer from "./pages/Gamer/Gamer";
 
-const OPTIONS: EmblaOptionsType = { loop: true };
-const SLIDE_COUNT = 5;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+// const OPTIONS: EmblaOptionsType = { loop: true };
+// const SLIDE_COUNT = 5;
+// const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 function App() {
   return (

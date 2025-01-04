@@ -26,7 +26,7 @@ const links = [
 
 const NavLinks = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("Home"); // Default active link
+  const [_, setActiveLink] = useState("Home"); // Default active link
 
   const handleLinkClick = (linkName: string) => {
     setActiveLink(linkName);
