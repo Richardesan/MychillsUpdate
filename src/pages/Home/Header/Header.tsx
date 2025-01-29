@@ -8,14 +8,15 @@ const ButtonsMenu = () => {
       {/* // Button Menu for xs screen */}
       <Box
         sx={{
-          display: { xs: "flex", sm: "none" },
-          flexDirection: { xs: "column", sm: "row" },
+          display: { xs: "flex", md: "none" },
+          flexDirection: "row",
           justifyContent: "center",
-          alignItems: "start",
-          my: 5,
-          fontSize: "23px",
+          alignItems: "center",
+          textAlign: "center",
+          // my: 5,
+          fontSize: "16px",
           width: "100%",
-          gap: "11px",
+          gap: "20px",
         }}
       >
         <Buttons
@@ -29,7 +30,7 @@ const ButtonsMenu = () => {
       {/* // Button Menu for large screens */}
       <Box
         sx={{
-          display: { xs: "none", sm: "flex" },
+          display: { xs: "none", md: "flex" },
           flexDirection: { xs: "column", sm: "row" },
           justifyContent: "center",
           alignItems: "center",
@@ -61,7 +62,7 @@ const Header = () => {
         justifyContent: "center",
         alignItems: "center",
         textAlign: "center",
-        py: { xs: "20px", sm: "100px" },
+        py: { xs: "20px", md: "100px" },
         position: "relative",
       }}
     >
@@ -72,12 +73,12 @@ const Header = () => {
         alt="Overlay"
         sx={{
           position: "absolute", // Position the image absolutely within the parent
-          top: "50%", // Adjust positioning as needed
+          top: { xs: "43.5%", sm: "60%", md: "50%" }, // Adjust positioning as needed
           left: "50%",
           transform: "translate(-50%, -50%)", // Center the image
           zIndex: 1, // Ensure it's above the background but below the text
-          width: { xs: "80%", md: "60%" }, // Responsive sizing
-          opacity: 0.2, // Optional: Adjust the opacity for a subtle effect
+          width: { xs: "80%", sm: "60%", md: "60%" }, // Responsive sizing
+          opacity: 0.3, // Optional: Adjust the opacity for a subtle effect
           // paddingTop: "10px",
         }}
       />
@@ -85,7 +86,7 @@ const Header = () => {
       {/* Text Content */}
       <Box
         sx={{
-          width: { xs: "85%", md: "80%" },
+          width: { xs: "90%", md: "80%" },
           height: "auto",
           py: { xl: "40px" },
           zIndex: 2, // Ensure the text is above the image
@@ -101,7 +102,7 @@ const Header = () => {
             alignItems: "center",
             textAlign: "center",
             marginTop: { xs: "40px", sm: "70px" },
-            gap: "88px",
+            gap: { xs: "48px", sm: "22px", md:'30px', lg: "88px" },
           }}
         >
           <Box
@@ -117,8 +118,8 @@ const Header = () => {
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                alignItems: { xs: "start", sm: "center" },
-                textAlign: { xs: "start", sm: "center" },
+                alignItems: "center",
+                textAlign: "center",
                 gap: { xs: "12px", md: "48px" },
               }}
             >
@@ -128,12 +129,14 @@ const Header = () => {
                   fontSize: {
                     xs: "12px",
                     sm: "14px",
-                    md: "24px",
+                    md: "18px",
+                    lg: "24px",
                   },
                   lineHeight: {
                     xs: "17.76px",
-                    sm: "30px",
-                    md: "28.8px",
+                    sm: "22px",
+                    md: "24px",
+                    lg: "28.8px",
                   },
                   color: "rgba(255, 255, 255, 1)",
                   textAlign: "center",
@@ -149,7 +152,8 @@ const Header = () => {
                   fontSize: {
                     xs: "36px",
                     sm: "36px",
-                    md: "94px",
+                    md:'60px',
+                    lg: "94px",
                   },
                   lineHeight: {
                     xs: "42.48px",
@@ -166,12 +170,12 @@ const Header = () => {
                 sx={{
                   fontWeight: "400",
                   fontSize: {
-                    xs: "12px",
+                    xs: "15px",
                     sm: "14px",
                     md: "20px",
                   },
                   lineHeight: {
-                    xs: "17.76px",
+                    xs: "26.76px",
                     sm: "30px",
                     md: "38px",
                   },
@@ -181,12 +185,13 @@ const Header = () => {
                   fontFamily: "DM Sans",
                 }}
               >
-                Ours is an inclusive and engaging community where everyone can
-                contribute, collaborate, and grow. We capitalize on our
-                connections, experience and result-driven team to keep providing
-                endless possibilities. As we have mastered the art of evolving,
-                there are endless possibilities in our community. Join our
-                vibrant community of creators, gamers, and crypto enthusiasts.{" "}
+                The Chills Room is an inclusive and engaging community where
+                everyone can contribute, collaborate, and grow. We capitalize on
+                our connections, experience and result-driven team to keep
+                providing endless possibilities. As we have mastered the art of
+                evolving, there are endless possibilities in our community. Join
+                our vibrant community of creators, gamers, and crypto
+                enthusiasts.
               </Typography>
             </Box>
           </Box>

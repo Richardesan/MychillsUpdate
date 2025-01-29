@@ -33,20 +33,23 @@ const Footer = () => {
     >
       <Box
         sx={{
-          width: { xs: "80%" },
+          width: { xs: "85%" },
           display: "flex",
           flexDirection: { xs: "column", sm: "row", md: "row" },
-          justifyContent: "space-between",
+          justifyContent: { xs: "center", sm: "space-between" },
+          alignItems: { xs: "center", sm: "center" },
+          textAlign: "center",
           marginTop: "30px",
-          marginBottom: "80px",
+          marginBottom: {xs:"40px", sm:'40px', md:'60px'},
           gap: 6,
         }}
       >
         <Box
           sx={{
             width: { xs: "100%", sm: "40%" },
+            justifyContent: { xs: "center", sm: "space-between" },
             display: "flex",
-            alignItems: "flex-start",
+            alignItems: { xs: "center", sm: "flex-start" },
             gap: "20px",
           }}
         >
@@ -54,21 +57,34 @@ const Footer = () => {
         </Box>
         <Box
           sx={{
-            width: { xs: "100%", sm: "60%" },
-
+            width: { xs: "100%", sm: "80%" },
             display: "flex",
+            flexDirection: { xs: "column", sm: "row" },
             alignItems: "center",
-            justifyContent: "space-between",
-
-            marginTop: { xs: "20px", md: "0" },
+            justifyContent: "end",
+            textAlign: "center",
+            gap: { xs: "30px", sm: "16px" },
           }}
         >
           {socialIcons.map((social, idx) => (
-            <Box sx={{ display: "flex", gap: "16px" }} key={idx}>
-              <img
+            <Box
+              sx={{
+                display: "flex",
+                gap: "4px",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+              key={idx}
+            >
+              <Box
+                component="img"
                 src={social.icon}
                 alt={social.alt}
-                style={{ color: "white", width: "28px" }}
+                sx={{
+                  color: "white",
+                  width: { xs: "12px", md: "28px" },
+                  height: { xs: "12px", md: "28px" },
+                }}
               />
               <Typography
                 sx={{
@@ -77,7 +93,7 @@ const Footer = () => {
                   color: "white",
                   fontFamily: "DM Sans",
                   fontWeight: "500",
-                  fontSize: "22px",
+                  fontSize: { xs: "12px", md: "22px" },
                   lineHeight: "28.64px",
                 }}
               >
@@ -94,7 +110,7 @@ const Footer = () => {
           alignItems: "center",
           justifyContent: "center",
           gap: "8px",
-          paddingBottom: "20px",
+          // paddingBottom: "20px",
         }}
       >
         <Typography
@@ -113,9 +129,9 @@ const Footer = () => {
         <Typography
           sx={{
             color: "rgba(255, 255, 255, 1)",
-            fontSize: "16px",
+            fontSize: { xs: "12px", md: "16px" },
             fontFamily: "DM Sans",
-            lineHeight: "20.68px",
+            lineHeight: { xs: "15px", md: "20px" },
           }}
         >
           The Chills Room 2024. All right reserved

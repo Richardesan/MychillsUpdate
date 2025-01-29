@@ -9,7 +9,6 @@ const Logo = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "start",
-        pt: { xs: 3, sm: 0, md: 0, lg: 0, xl: 0 },
         "&:hover": {
           textDecoration: "none",
         },
@@ -18,14 +17,16 @@ const Logo = () => {
       <Box
         sx={{
           width: {
-            xs: "28px",
-            sm: "24px",
-            md: "72px",
+            xs: "50px",
+            sm: "40px",
+            md: "50px",
+            lg: "72px",
           },
           height: {
-            xs: "26px",
-            sm: "22px",
+            xs: "50px",
+            sm: "40px",
             md: "72px",
+            lg: "72px",
           },
         }}
       >
@@ -37,20 +38,20 @@ const Logo = () => {
       </Box>
       <Typography
         sx={{
-          ml: { xs: 2, sm: 1, lg: 2 },
+          // ml: { xs: 0, sm: 0, md: 1, lg: 2 },
           color: "#fafafa",
           textDecoration: "none",
           fontSize: {
-            xs: "12.22px",
-            sm: "10.22px",
-            md: "22px",
+            xs: "15px",
+            sm: "12px",
+            md: "17px",
           },
           fontFamily: "DM Sans ",
-          fontWeight: { xs: 600, sm: 700 },
-          lineHeight: { sm: "28.64px" },
+          fontWeight: { xs: 700, sm: 700 },
+          lineHeight: { xs: "18px", md: "28.64px" },
         }}
       >
-        The Chills Room
+        TheChillsRoom
       </Typography>
     </Link>
   );

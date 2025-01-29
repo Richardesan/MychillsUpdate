@@ -29,23 +29,27 @@ const NavLinks: React.FC<NavLinksProps> = ({ activeLink, onLinkClick }) => {
   return (
     <Box
       sx={{
-        height: "60px",
+        height: { xs: "45px", md: "60px" },
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         textAlign: "center",
         color: "#FAFAFA",
         fontSize: {
-          sm: "10px",
+          sm: "12px",
           md: "16px",
         },
-        lineHeight: "19.5px",
+        lineHeight: {
+          sm: "15.6px",
+          md: "18px",
+        },
         fontWeight: "500",
         border: "1px solid rgba(77, 79, 92, 1)",
         borderRadius: "90px",
-        padding: "10px",
+        px: "10px",
+        py: "3px",
         gap: "8px",
-        marginBottom: "70px",
+        marginBottom: { xs: "20px", md: "70px" },
         backgroundColor: "transparent",
       }}
     >
@@ -59,14 +63,17 @@ const NavLinks: React.FC<NavLinksProps> = ({ activeLink, onLinkClick }) => {
                 : "rgba(255, 255, 255, 1)",
             textDecoration: "none",
             fontSize: {
-              xs: "15px",
+              xs: "12px",
               sm: "10px",
               md: "12px",
               lg: "16px",
               xl: "20px",
             },
             fontWeight: "500",
-            lineHeight: "26px",
+            lineHeight: {
+              xs: "15px",
+              md: "26px",
+            },
             transition: "all 0.4s ease",
             border: activeLink === link.name ? "1px solid transparent" : "none",
             borderRadius: "100px",
@@ -74,9 +81,9 @@ const NavLinks: React.FC<NavLinksProps> = ({ activeLink, onLinkClick }) => {
               activeLink === link.name
                 ? "rgba(255, 255, 255, 1)"
                 : "transparent",
-            px: "24px",
-            py: activeLink === link.name ? "10px" : "0px",
-            height: "30px",
+            px: "20px",
+            py: activeLink === link.name ? "7px" : "0px",
+            // height: "30px",
             display: "flex",
             textAlign: "center",
             justifyContent: "center",
@@ -115,7 +122,7 @@ const MainTeam: React.FC = () => {
     >
       <Box
         sx={{
-        //   width: { xs: "100%", sm: "100%" },
+          //   width: { xs: "100%", sm: "100%" },
           display: "flex",
           alignItems: "center",
           justifyContent: "center",

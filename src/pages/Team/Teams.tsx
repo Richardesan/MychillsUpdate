@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/joy";
 import TeamTogggle from "./TeamToggle";
 
-
 export default function Teams() {
   return (
     <Box
@@ -9,19 +8,19 @@ export default function Teams() {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        alignItems: { xs: "start", sm: "center" },
+        alignItems: "center",
         gap: 3,
-        marginBottom: "150px",
+        marginBottom: {xs: '50px', md:"150px"},
       }}
     >
       <Box
         sx={{
-          width: "75%",
+          width: { xs: "90%", sm:'80%', md:"75%" },
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          alignItems: { xs: "start", sm: "center" },
-          textAlign: { xs: "start", sm: "center" },
+          alignItems: "center",
+          textAlign: "center",
           gap: { xs: "12px", md: 4 },
         }}
       >
@@ -29,18 +28,17 @@ export default function Teams() {
           sx={{
             fontWeight: "800",
             fontSize: {
-              xs: "12px",
-              sm: "14px",
+              xs: "18px",
               md: "40px",
             },
             lineHeight: {
-              xs: "17.76px",
+              xs: "23px",
               sm: "30px",
               md: "52px",
             },
             color: "rgba(255, 255, 255, 1)",
             textAlign: "center",
-            letterSpacing: "10%",
+            letterSpacing: "0.3rem",
             fontFamily: "Syne",
           }}
         >
@@ -50,18 +48,18 @@ export default function Teams() {
           sx={{
             fontWeight: "400",
             fontSize: {
-              xs: "12px",
-              sm: "14px",
+              xs: "14px",
+              sm: "18px",
               md: "26px",
             },
             lineHeight: {
-              xs: "17.76px",
+              xs: "23px",
               sm: "30px",
               md: "44.2px",
             },
             color: "rgba(224, 224, 224, 1)",
             textAlign: "center",
-            letterSpacing: "3%",
+            letterSpacing: "0.05rem",
             fontFamily: "DM Sans",
           }}
         >

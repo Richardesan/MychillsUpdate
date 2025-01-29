@@ -1,6 +1,7 @@
 import {
   Box,
   Link,
+  Button,
   IconButton,
   List,
   // ListItem,
@@ -9,7 +10,6 @@ import {
 import { useState } from "react";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { ListItemText } from "@mui/material";
-import Menu from "../../assets/menu.png";
 import Logo from "../../UI/Logo/Logo";
 import { NavLink } from "react-router-dom";
 // import { Link as RouterLink } from "react-router-dom";
@@ -56,16 +56,29 @@ const NavLinks = () => {
             xl: "none",
           },
           alignItems: "center",
-          pt: 3,
+          justifyContent: "center",
+          // pt: 3,
         }}
       >
-        <IconButton
+        <Button
           aria-label="open drawer"
           onClick={toggleDrawer(true)}
-          sx={{ color: "white", width: "20px", height: "20px" }}
+          sx={{
+            width: "81px",
+            height: "37px",
+            color: "gba(255, 255, 255, 1)",
+            display: "flex",
+            backgroundColor: "black",
+            border: "1px solid transparent ",
+            borderRadius: "70px",
+            fontFamily: "Montserrat",
+            fontSize: "14px",
+            fontWeight: "500",
+            lineHeight: "17.07px",
+          }}
         >
-          <img src={Menu} alt="" style={{ width: "28px", height: "28px" }} />
-        </IconButton>
+          Menu
+        </Button>
         <Drawer
           anchor="left"
           open={drawerOpen}
@@ -83,7 +96,7 @@ const NavLinks = () => {
           <Box
             sx={{
               width: 250,
-              padding: 2,
+              // padding: 2,
             }}
             role="presentation"
             onClick={toggleDrawer(false)}
@@ -133,8 +146,6 @@ const NavLinks = () => {
       {/* Regular NavLinks for md, lg, xl screens */}
       <Box
         sx={{
-          width: { xs: "10%", sm: "50%" },
-          height: "60px",
           display: {
             xs: "none",
             sm: "flex",
@@ -142,53 +153,60 @@ const NavLinks = () => {
             lg: "flex",
             xl: "flex",
           },
-          justifyContent: "space-between",
+          width: { sm: "40%", md: "50%" },
+          // height: "60px",
+          // justifyContent: "space-between",
           alignItems: "center",
           textAlign: "center",
           fontFamily: "Montserrat",
           color: "#FAFAFA",
           fontSize: {
-            sm: "10px",
-            md: "16px",
+            xs: "10px",
+            sm: "12px",
+            md: "16px ",
           },
           lineHeight: "19.5px",
           fontWeight: "600",
           border: "1px solid transparent",
           borderRadius: "120px",
-          padding: "14px",
-          gap: "16px",
-          backgroundColor: "black",
+          padding: "8px",
+          gap: { md: "16px" },
+          // backgroundColor: "black",
         }}
       >
-       {links.map((link) => (
-        <NavLink
-          to={link.path} // Link to the specified route
-          key={link.name}
-          style={({ isActive }) => ({
-            color: "#fafafa",
-            fontSize:"15px",
-            fontWeight: "600",
-            lineHeight: "19.5px",
-            transition: "all 0.4s ease",
-            border: isActive ? "1px solid transparent" : "none",
-            borderRadius: "40px",
-            backgroundColor: isActive
-              ? "rgba(101, 175, 186, 1)"
-              : "transparent",
-            padding: "14px 24px",
-            textAlign: "center",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            fontFamily: "Montserrat",
-            textDecoration: "none",
-            height: "30px",
-            gap: isActive ? "10px" : "0px",
-          })}
-          onClick={() => handleLinkClick(link.name)}
-        >
-          {link.name}
-        </NavLink>
+        {links.map((link) => (
+          <NavLink
+            to={link.path} // Link to the specified route
+            key={link.name}
+            style={({ isActive }) => ({
+              textDecoration: "none",
+              backgroundColor: isActive
+                ? "rgba(101, 175, 186, 1)"
+                : "transparent",
+              gap: isActive ? "10px" : "0px",
+              border: isActive ? "1px solid transparent" : "none",
+              borderRadius: "40px",
+              transition: "all 0.4s ease",
+              // padding: isActive ? " none" : "14px",
+            })}
+          >
+            <Link
+              component="span" // Use a span to prevent wrapping issues
+              sx={{
+                color: "#fafafa",
+                padding: { xs: "4px 10px", sm: "7px 18px", md: "7px 18px" }, // Responsive padding
+                fontSize: { xs: "10px", sm: "10px", md: "12px", lg: "16px" }, // Responsive font sizes
+                textAlign: "center",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                fontFamily: "Montserrat",
+              }}
+              onClick={() => handleLinkClick(link.name)}
+            >
+              {link.name}
+            </Link>
+          </NavLink>
         ))}
       </Box>
     </>
@@ -196,7 +214,7 @@ const NavLinks = () => {
 };
 
 const MintButton = () => {
-  return <Box sx={{ width: { xs: "10%", sm: "25%" } }}> </Box>;
+  return <Box sx={{ width: { xs: "10%", sm: "30%", md: "25%" } }}> </Box>;
 };
 
 const NavBar = () => {
@@ -213,15 +231,16 @@ const NavBar = () => {
         zIndex: 4,
         // backgroundImage: `url(${bg})`,
         paddingTop: "30px",
+        // filter: "drop-shadow(-1px 10px 3px rgba(101, 171, 162, 1))",
         filter: "drop-shadow(-1px 10px 150px rgba(101, 171, 162, 1))",
       }}
     >
       <Box
         sx={{
-          width: { xs: "100%", sm: "90%" },
+          width: { xs: "90%", sm: "90%" },
           display: "flex",
           alignItems: "center",
-          // justifyContent: "space-between",
+          justifyContent: { xs: "center", sm: "space-between" },
           textAlign: "center",
         }}
       >
@@ -230,8 +249,9 @@ const NavBar = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "start",
-            width: { xs: "100%", sm: "25%" },
-            pt: { xs: 3, sm: 0, md: 0, lg: 0, xl: 0 },
+            whiteSpace: "nowrap",
+            width: { xs: "100%", sm: "30%", md: "25%" },
+            // pt: { xs: 3, sm: 0, md: 0, lg: 0, xl: 0 },
 
             "&:hover": {
               textDecoration: "none",
@@ -241,8 +261,20 @@ const NavBar = () => {
           {" "}
           <Logo />
         </Box>
+        <Box
+          sx={{
+            display: "flex",
+            border: "1px solid transparent",
+            backgroundColor: "black",
+            justifyContent: "space-between",
+            alignItems: "center",
+            borderRadius: "120px",
+            // px: "10px",
+          }}
+        >
+          <NavLinks />
+        </Box>
 
-        <NavLinks />
         <MintButton />
       </Box>
     </Box>

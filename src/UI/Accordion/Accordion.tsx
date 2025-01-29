@@ -18,10 +18,10 @@ const AccordionIndicator: React.FC<AccordionIndicatorProps> = (props) => {
         gap: 4,
         marginBottom: "20px",
         border: "1px solid transparent ",
-        borderRadius: "24px",
-        borderImageSlice: "1",
-        borderImageSource:
-          "linear-gradient(91.44deg, #65AFBA -5.85%, #14151F 29.58%, #65AFBA 65.02%, #0D0E14 100.45%)",
+        borderRadius: "8px",
+        // borderImageSlice: "1",
+        // borderImageSource:
+        //   "linear-gradient(91.44deg, #65AFBA -5.85%, #14151F 29.58%, #65AFBA 65.02%, #0D0E14 100.45%)",
         "&:hover": {
           textDecoration: "none",
         },
@@ -31,12 +31,13 @@ const AccordionIndicator: React.FC<AccordionIndicatorProps> = (props) => {
         sx={{
           backgroundColor: "rgba(13, 14, 20, 1)",
           fontWeight: "700",
-          gap: "80px",
+          gap: { md: "80px" },
           px: "10px",
         }}
       >
         <Button
           sx={{
+            width: "92%",
             color: "white",
             backgroundColor: "transparent",
             justifyContent: "left",
@@ -45,16 +46,16 @@ const AccordionIndicator: React.FC<AccordionIndicatorProps> = (props) => {
             fontFamily: "Syne",
             fontWeight: "700",
             fontSize: {
-              xs: "12px",
+              xs: "11px",
               sm: "16px",
               md: "20px",
             },
             lineHeight: {
-              xs: "16px",
+              xs: "13.2px",
               sm: "22px",
               md: "24.8px",
-              letterSpacing: "3px",
             },
+            letterSpacing: "0.15rem",
             "&:hover": {
               backgroundColor: "transparent",
               textDecoration: "none",
@@ -81,9 +82,8 @@ const AccordionIndicator: React.FC<AccordionIndicatorProps> = (props) => {
             sm: "22px",
             md: "32px",
           },
-          letterSpacing: '3px',
+          letterSpacing: "3px",
           px: "10px",
-
         }}
       >
         {props.answer}
