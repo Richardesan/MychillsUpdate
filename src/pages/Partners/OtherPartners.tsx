@@ -18,6 +18,7 @@ const logos = [
   { logo: Logo7, text: "Partner 7" },
 ];
 
+// Infinite scrolling animation (No gaps)
 const infiniteScroll = keyframes`
   from {
     transform: translateX(0);
@@ -27,15 +28,17 @@ const infiniteScroll = keyframes`
   }
 `;
 
+// Styled animated list
 const AnimatedList = styled(List)`
-  animation: ${infiniteScroll} 20s linear infinite;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: row;
-  ariahidden: true;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: max-content;
+  animation: ${infiniteScroll} 100s linear infinite;
 `;
-
 const OtherPartners = () => {
   const renderLogos = () => {
     return [...logos, ...logos].map((logo, index) => (
@@ -43,14 +46,14 @@ const OtherPartners = () => {
         key={index}
         sx={{
           width: {
-            xs: "130px",
-            sm: "130px",
-            md: "140px",
+            xs: "90px",
+            sm: "90px",
+            md: "120px",
             lg: "160px",
             xl: "200px",
           },
           display: "flex",
-          flexDirection:'column',
+          flexDirection: "column",
           justifyContent: "center",
         }}
       >
@@ -60,11 +63,13 @@ const OtherPartners = () => {
           style={{
             height: "auto",
             maxWidth: "100%",
+            // gap: "200px",
           }}
         />
         <Typography
           sx={{
-            fontSize: { xs: "10px", sm: "12px", md: "14px" },
+            fontSize: { xs: "12px", md: "14px" },
+            fontWeight: "700",
             color: "#FAFAFA",
             mt: 1, // Add some space between the logo and the text
           }}
@@ -76,15 +81,18 @@ const OtherPartners = () => {
   };
 
   return (
-    <Box>
+    <Box
+      sx={{
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <Box
         sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: { xs: "start", sm: "center" },
-          textAlign: { xs: "start", sm: "center" },
-          gap: { xs: "12px", md: "48px" },
+          width: { xs: "80%", md: "100%" },
         }}
       >
         <Typography
@@ -97,7 +105,7 @@ const OtherPartners = () => {
             },
             lineHeight: {
               xs: "17.76px",
-              sm: "30px",
+              sm: "22px",
               md: "28.8px",
             },
             color: "rgba(255, 255, 255, 1)",
@@ -109,7 +117,18 @@ const OtherPartners = () => {
           {" "}
           OTHER PROJECTS WE HAVE COLLABORATED WITH
         </Typography>
-
+      </Box>
+      <Box
+        sx={{
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+          gap: { xs: "12px", md: "48px" },
+        }}
+      >
         <Box
           sx={{
             width: "100%",

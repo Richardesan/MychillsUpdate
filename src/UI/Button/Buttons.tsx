@@ -13,13 +13,12 @@ const Buttons = (props: Props) => {
   return (
     <Box
       sx={{
+        width:'auto',
         display: "flex",
         justifyContent: "space-between",
         borderRadius: "70px",
         border: "0.8px solid ",
         borderColor: `${props.borderColor}`,
-        width: {xs: '154px', sm:"198px"}, // Responsive width
-        height: {xs:'48px', sm:"59px"}, // Responsive height
         fontSize: ["16px", "21.3px"], // Responsive font size
         transition: "transform 0.3s",
         "&:hover": {
@@ -36,7 +35,7 @@ const Buttons = (props: Props) => {
           backgroundColor: `${props.background}`,
           width: "100%",
           height: "100%",
-          padding: "18px, 48px, 18px, 48px",
+          padding: "10px 39px",
           borderRadius: "50px",
           borderColor: "transparent",
           "&:hover": {
@@ -52,10 +51,11 @@ const Buttons = (props: Props) => {
             textAlign: "center",
             justifyContent: "center",
             color: "rgba(250, 250, 250, 1)",
-            fontSize: "16px", 
+            fontSize: "16px",
             fontWeight: "700",
             width: "90%",
             fontFamily: "DM Sans",
+            textWrap: "nowrap",
           }}
         >
           {props.text}
