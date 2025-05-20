@@ -20,7 +20,7 @@ const Footer = () => {
        {
       name: "Substack",
       icon: <BsBookmarkStarFill />,
-      link: "",
+      link: "https://substack.com/@thechillsroomfiles",
     }
   ];
   return (

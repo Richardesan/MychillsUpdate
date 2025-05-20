@@ -174,6 +174,7 @@ const Navbar = () => {
                   {tab}
                 </div>
               ))}
+              
             </motion.div>
           </>
         )}
