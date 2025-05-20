@@ -18,7 +18,7 @@ function Layout() {
         backgroundColor: "black", // just to test
       }}
     >
-      <div className="overflow-y-scroll overflow-x-hidden  px-[9%] max-xl:px-[7%]  max-sm:px-[5%] h-full scroll-container">
+      <div className="overflow-y-scroll overflow-x-hidden  px-[9%] max-xl:px-[7%]  max-sm:px-[3%] h-full scroll-container">
         <Routes>
           
           <Route path={AppRoutes.home} element={<MainHome />}>

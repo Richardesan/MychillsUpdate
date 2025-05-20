@@ -89,7 +89,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-white flex justify-between items-center py-4 relative z-30">
+    <nav className="text-white flex justify-between items-center py-4 relative z-30 ">
       <Link to={AppRoutes.home}>
         <section className="flex items-center font-bold">
           <div className="w-[72px] h-[72px]">

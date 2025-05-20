@@ -128,7 +128,7 @@ const Teame = () => {
     "hover:scale-105 active:scale-95 transition-all duration-100 uppercase px-4 py-2 rounded-full";
 
   return (
-    <div className="text-white my-16 relative" id="team">
+    <div className="text-white relative" id="team">
       <h1 className="text-4xl syne-regular text-center tracking-[8px] max-sm:tracking-[4px] max-sm:text-2xl">
         MEET THE TEAM
       </h1>
