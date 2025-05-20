@@ -7,7 +7,7 @@ const Mission = () => {
   };
   return (
     <div className="pb-12 max-sm:pb-16 text-white  relative ">
-      <p className="text-4xl text-center syne-regular tracking-[4px]">
+      <p className="text-4xl max-sm:text-3xl text-center syne-regular tracking-[4px]">
         WHO WE ARE?
       </p>
       <p className="dm-sans-regular text-2xl leading-10 text-center mt-10 z-10 max-sm:text-lg max-sm:text-start">

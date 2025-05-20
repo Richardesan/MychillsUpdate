@@ -132,7 +132,7 @@ const Teame = () => {
       <h1 className="text-4xl syne-regular text-center tracking-[8px] max-sm:tracking-[4px] max-sm:text-2xl">
         MEET THE TEAM
       </h1>
-      <p className="text-center max-sm:text-start text-2xl max-sm:text-xl dm-sans-regular px-8 max-sm:px-0 mt-5 mb-10">
+      <p className="text-center max-sm:text-start text-2xl max-sm:text-base dm-sans-regular px-8 max-sm:px-0 mt-5 mb-10">
         A collection of passionate innovators, creators, and strategists, each
         offering their expertise. With a commitment to expand the landmark of
         Web3 and focus on creating a community where creativity, content

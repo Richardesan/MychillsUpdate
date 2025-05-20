@@ -106,7 +106,7 @@ const GamerClique = () => {
             <img src="rocket.png" />
           </div>
         </div>
-        <h1 className="text-5xl kumar-one-regular z-20 text-center mt-20 ax-sm:text-2xl max-sm:mt-10">
+        <h1 className="text-5xl kumar-one-regular z-20 text-center mt-20 max-sm:text-3xl max-sm:mt-10">
           GAMERS CLIQUE{" "}
         </h1>
         <section className="flex  mt-16 max-sm:mt-8 justify-center gap-x-[20%] items-start px-20 max-lg:flex-col max-2xl:px-0 max-2xl:gap-x-0 max-2xl:justify-between max-sm:gap-y-8">

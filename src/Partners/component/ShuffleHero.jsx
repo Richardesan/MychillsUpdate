@@ -5,7 +5,7 @@ const ShuffleHero = () => {
   return (
     <section className="">
       <article className="w-full px-8 max-sm:px-0 py-12 max-sm:py-6 flex max-xl:flex-col justify-between md:grid-cols-2 items-center gap-8 mx-auto text-white">
-        <div className="space-y-3 basis-[43%] text-xl max-sm:text-sm text-center max-sm:text-start">
+        <div className="space-y-3 basis-[43%] text-xl max-sm:text-base text-center max-sm:text-start">
           <p className="font-semibold ">
             Our partnerships are the foundation of our thriving community. By
             partnering with leading companies and ventures, we're fostering
