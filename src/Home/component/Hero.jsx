@@ -7,8 +7,8 @@ import { AppRoutes } from "../../utils/route";
 const Hero = () => {
   const heroText = `The Chills Room is an inclusive and engaging community where everyone can contribute, collaborate, and grow. We capitalize on our connections, experience and result-driven team to keep providing endless possibilities. As we have mastered the art of evolving, there are endless possibilities in our community. Join our vibrant community of creators, gamers, and crypto enthusiasts.`;
   return (
-    <div className="relative text-white h-[80vh] flex justify-center items-center  ">
-      <div className="absolute   w-[53rem] max-sm:w-[42rem] ">
+    <div className="relative text-white h-[80vh] max-sm:h-full flex justify-center items-center max-sm:items-start max-sm:mt-10 max-sm:mb-20">
+      <div className="absolute   w-[53rem] max-sm:w-[35rem] ">
         <img src="/logo.png" className="opacity-30  w-full" />
       </div>
 <div>
@@ -17,11 +17,11 @@ const Hero = () => {
         THE CHILLS ROOM
       </p>
 
-      <p className="text-8xl mx-auto text-center  leading-[120px] mt-14 kumar-one-regular relative  max-lg:text-6xl max-sm:text-4xl">
+      <p className="text-8xl mx-auto text-center  leading-[120px] mt-14 kumar-one-regular relative  max-lg:text-6xl max-sm:text-3xl">
         Empowering the future of web3
       </p>
 
-      <p className="text-xl max-sm:text-xl leading-9 text-center relative dm-sans-regular mt-9">
+      <p className="text-xl max-sm:text-lg leading-9 text-center  relative dm-sans-regular mt-9">
         {heroText}
       </p>
       <section className="z-50">
