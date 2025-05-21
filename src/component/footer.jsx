@@ -26,7 +26,7 @@ const Footer = () => {
   return (
     <footer className="w-full text-white py-10 ">
       <div className="flex justify-between items-center w-full max-md:flex-col space-y-2">
-        <section className="flex items-center font-bold ">
+        <section className="flex items-center font-bold max-sm:hidden">
           <div className="w-[72px] h-[72px]">
             <img src="/chilroomLogo.svg" />
           </div>
@@ -69,7 +69,7 @@ const Footer = () => {
           })}
         </section> */}
       </div>
-      <p className="text-center text-base mt-5">
+      <p className="text-center text-base mt-5 max-sm:text-xs">
         Copyright © The Chills Room 2024. All right reserved
       </p>
     </footer>
