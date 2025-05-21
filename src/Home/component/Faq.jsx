@@ -43,7 +43,7 @@ const Faq = () => {
 
   return (
     <section className="text-white pb-14 relative ">
-      <div className="absolute left-1/2 bottom-36 -translate-x-1/2 translate-y-60 mt-2 mr-4 z-0 w-[65rem] max-sm:w-[46rem] max-lg:translate-y-60">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mr-4 z-0 w-[65rem] max-sm:w-[35rem] ">
         <img src="/logo.png" className="opacity-30  w-full" />
       </div>
       <div>

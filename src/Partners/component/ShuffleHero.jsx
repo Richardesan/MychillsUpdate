@@ -63,7 +63,7 @@ const squareData = [
   { id: 5, src: "/Ellipse5.png" },
   { id: 6, src: "/Ellipse6.png" },
   { id: 7, src: "/Ellipse7.png" },
-  { id: 8, src: "/Ellipse8.png" },
+  { id: 8, src: "/eclipse0.png" },
   { id: 9, src: "/Ellipse9.png" },
 ];
 

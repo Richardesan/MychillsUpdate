@@ -89,7 +89,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-white flex justify-between items-center left-0 fixed top-0 bg-bak w-full z-30  px-[9%] max-xl:px-[7%]  max-sm:px-[3%] py-4 backdrop-blur-md">
+    <nav className="text-white flex justify-between items-center left-0 fixed top-0 bg-bak w-full z-50  px-[9%] max-xl:px-[7%]  max-sm:px-[3%] py-4 backdrop-blur-md">
       <Link to={AppRoutes.home}>
         <section className="flex items-center font-bold">
           <div className="w-[72px] h-[72px]">
@@ -104,7 +104,7 @@ const Navbar = () => {
       {/* Desktop tabs */}
       <section className="relative z-20">
         <ChipTabs />
-        <div className="bg-custom-radial opacity-30 absolute w-[1512px] h-[963px] left-1/2 -top-1/2 -translate-x-1/2 -translate-y-1/3 -z-20 pointer-events-none"></div>
+        <div className="bg-custom-radial opacity-30 absolute w-[1512px] h-[963px] left-1/2 -top-1/2 -translate-x-1/2 -translate-y-1/3 -z-20 pointer-events-none max-sm:hidden"></div>
       </section>
 
       {/* Mobile menu button */}
@@ -137,7 +137,7 @@ const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="fixed top-0 left-0 bottom-0 w-full px-6 py-3  text-white z-50  flex flex-col"
+              className="fixed top-0 left-0 bottom-0 w-full px-3 py-3  text-white z-50  flex flex-col"
             >
               <div className="flex justify-between items-center mb-20">
                 <section className="flex items-center font-bold ">

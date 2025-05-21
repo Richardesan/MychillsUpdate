@@ -20,23 +20,21 @@ const Testimony = () => {
   const cards = [
     {
       id: 1,
-      title: "THESE GUYS ARE VERY SUPPORTIVE WITH AMAZING MEMBERS.",
-      text: `The Chills Room is one of the most supportive communities 
-      in the space and members are constantly supporting the 
-      latest brands to coming into the market.`,
-      dp: "/testimoniladp.png",
-      author: "EC",
-      role: "CTO, Arcaia",
+      title: "CHILLED DUDES (PUN INTENDED) THEY ARE ALWAYS INNOVATING.",
+      text: `The foundation that’s been laid is impressive, and I’m confident that there are even more exciting features and improvements on the horizon; even as they evolve.
+`,
+      dp: "/blanket.png",
+      author: "BLANKET",
+      role: "Partnerships,  AP Collective - DN3 Ventures",
     },
     {
       id: 2,
-      title: "THESE GUYS ARE VERY SUPPORTIVE WITH AMAZING MEMBERS.",
-      text: `The Chills Room is one of the most supportive communities 
-      in the space and members are constantly supporting the 
-      latest brands to coming into the market.`,
-      dp: "/testimoniladp.png",
-      author: "EC",
-      role: "CTO, Arcaia",
+      title: "THE CHILLS ROOM IS A  VERY CHILLED COMMUNITY",
+      text: `I have Known the group since December of 2023 and I can say they are the chillest set of people in the web3 space.
+`,
+      dp: "/mafiaboss.png",
+      author: "THEMAFIABOSS",
+      role: "CM & Marketer,  AP Collective - ARC",
     },
     {
       id: 3,
@@ -50,23 +48,20 @@ const Testimony = () => {
     },
     {
       id: 4,
-      title: "THESE GUYS ARE VERY SUPPORTIVE WITH AMAZING MEMBERS.",
-      text: `The Chills Room is one of the most supportive communities 
-      in the space and members are constantly supporting the 
-      latest brands to coming into the market.`,
-      dp: "/testimoniladp.png",
-      author: "EC",
-      role: "CTO, Arcaia",
+      title: "THE CHILL ROOM IS HAS PROVIDED AN INCREDIBLE ATMOSPHERE IN WEB3.",
+      text: `Savage has built an incredible atmosphere in the chills room. A place for gamers and degens that have an open mind and are always looking to try help each other grow.`,
+      dp: "/attis.png",
+      author: "ATTIS",
+      role: "Strategist, Solana Games Ambassador Program",
     },
     {
       id: 5,
-      title: "THESE GUYS ARE VERY SUPPORTIVE WITH AMAZING MEMBERS.",
-      text: `The Chills Room is one of the most supportive communities 
-      in the space and members are constantly supporting the 
-      latest brands to coming into the market.`,
+      title: "A VERY SUPPORTIVE COMMUNITY WITH ACTIVE MEMBERS.",
+      text: `Chills room and Savage has been supported from starting and its one of the best gaming community.
+`,
       dp: "/testimoniladp.png",
-      author: "EC",
-      role: "CTO, Arcaia",
+      author: "PIRZADA",
+      role: "NFT Strategist, Seedify Fund",
     },
   ];
 
@@ -81,7 +76,7 @@ const Testimony = () => {
   };
 
   return (
-    <div className="flex items-center flex-col justify-center h-screen relative max-sm:h-[unset] max-sm:py-16 overflow-hidden text-white">
+    <div className="flex items-center flex-col justify-center relative  py-28 max-sm:py-16 overflow-hidden text-white">
       <h1 className="syne-regular text-4xl  text-white text-center max-sm:text-xl">
         WHAT PEOPLE ARE SAYING ABOUT US
       </h1>
@@ -111,8 +106,8 @@ const Testimony = () => {
                 <div className="flex gap-x-5 items-center text-[#65AFBA] text-xl max-sm:text-sm max-sm:gap-x-2">
                   <img src={card.dp} alt={card.dp} className="w-12 max-sm:w-9 object-cover" />
                   <div className="">
-                    <p className="font-bold ">{card.author}</p>
-                    <p className="font-normal">{card.role}</p>
+                    <p className="font-bold text-base max-sm:text-sm">{card.author}</p>
+                    <p className="font-normal text-sm max-sm:text-xs">{card.role}</p>
                   </div>
                 </div>
                 <img src="/quote.png" className="rotate-180 max-sm:w-14 object-contain" />
@@ -122,7 +117,7 @@ const Testimony = () => {
         );
       })}
 
-      <div className="flex gap-4 mt-[33rem] max-sm:mt-[25rem]  z-50">
+      <div className="flex gap-4 mt-[33rem] max-sm:mt-[25rem]  z-10">
         <button
           onClick={handleBack}
           className="bg-[#1c393d] text-white px-4 py-2 rounded hover:scale-110 active:scale-95 transition-all duration-150 active:bg-primaryCol"
