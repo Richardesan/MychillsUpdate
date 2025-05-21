@@ -10,7 +10,7 @@ const Partners = () => {
     <div className="text-white">
       <section>
         <div>
-          <h1 className="text-5xl kumar-one-regular text-center mt-20 max-sm:text-3xl max-sm:mt-10 ">
+          <h1 className="text-5xl kumar-one-regular text-center mt-36 max-sm:text-3xl max-sm:mt-28 ">
             OUR NETWORK OF PARTNERS
           </h1>
           <ShuffleHero />

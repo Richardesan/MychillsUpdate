@@ -128,7 +128,7 @@ const Teame = () => {
     "hover:scale-105 active:scale-95 transition-all duration-100 uppercase px-4 py-2 rounded-full";
 
   return (
-    <div className="text-white relative" id="team">
+    <div className="text-white relative " id="team">
       <h1 className="text-4xl syne-regular text-center tracking-[8px] max-sm:tracking-[4px] max-sm:text-2xl">
         MEET THE TEAM
       </h1>
@@ -159,8 +159,8 @@ const Teame = () => {
         </button>
       </div>
 
-      <div className="mt-5">
-        <div className="h-[90vh] relative hidden 2xl:block">
+      <div className="mt-5 ">
+        <div className="h-[770px] relative hidden 2xl:block">
           {myTeam.map((member, index) => (
             <div
               key={member.name}
@@ -182,7 +182,7 @@ const Teame = () => {
         </div>
 
         {/* Fallback stacked version for mobile */}
-        <div className="2xl:hidden flex flex-wrap justify-center gap-8 mt-8">
+        <div className="2xl:hidden flex flex-wrap justify-center gap-8 mt-8 ">
           {myTeam.map((member) => (
             <div
               key={member.name}

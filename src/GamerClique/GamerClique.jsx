@@ -93,7 +93,7 @@ const GamerClique = () => {
   ];
 
   return (
-    <div className="text-white">
+    <div className="text-white max-sm:mt-28 mt-36">
       <section className="h-[75vh] max-sm:h-screen relative ">
         <div className="absolute left-0 top-0 w-full h-full z-0 opacity-20 flex items-center   overflow-hidden">
           <div className="w-[10rem] mr-auto self-start">
@@ -106,7 +106,7 @@ const GamerClique = () => {
             <img src="rocket.png" />
           </div>
         </div>
-        <h1 className="text-5xl kumar-one-regular z-20 text-center mt-20 max-sm:text-3xl max-sm:mt-10">
+        <h1 className="text-5xl kumar-one-regular z-20 text-center  max-sm:text-3xl ">
           GAMERS CLIQUE{" "}
         </h1>
         <section className="flex  mt-16 max-sm:mt-8 justify-center gap-x-[20%] items-start px-20 max-lg:flex-col max-2xl:px-0 max-2xl:gap-x-0 max-2xl:justify-between max-sm:gap-y-8">

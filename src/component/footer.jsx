@@ -24,20 +24,20 @@ const Footer = () => {
     }
   ];
   return (
-    <footer className="w-full text-white pb-10 ">
-      <div className="flex justify-between items-center w-full max-md:flex-col space-y-4">
+    <footer className="w-full text-white py-10 ">
+      <div className="flex justify-between items-center w-full max-md:flex-col space-y-2">
         <section className="flex items-center font-bold ">
           <div className="w-[72px] h-[72px]">
             <img src="/chilroomLogo.svg" />
           </div>
-          <p className="text-white text-xl font-bold dm-sans-semibold ">
+          <p className="text-white text-xl max-sm:text-base font-bold dm-sans-semibold ">
             The Chills Room
           </p>
         </section>
         <div className="flex justify-center items-center gap-x-4 max-sm:flex-col max-sm:space-y-3">
           {socials.map((data, index) => {
             return (
-              <a key={index} href={`${data.link}` } target="_blank">
+              <a key={index} href={`${data.link}` } target="_blank" className="z-20 hover:scale-105 transition-all duration-100">
                 <div
                   className="flex items-end gap-1 justify-center group cursor-pointer duration-300"
                   id="contactme"

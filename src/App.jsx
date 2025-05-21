@@ -7,6 +7,7 @@ import GamerClique from "./GamerClique/GamerClique";
 import Team from "./Team/Team";
 import MainHome from "./MainHome/mainHome";
 import About from "./About/About";
+import ScrollToTop from "./component/ScrollToTop";
 function Layout() {
   return (
     <div
@@ -18,9 +19,11 @@ function Layout() {
         backgroundColor: "black", // just to test
       }}
     >
-      <div className="overflow-y-scroll overflow-x-hidden  px-[9%] max-xl:px-[7%]  max-sm:px-[3%] h-full scroll-container">
+      <ScrollToTop />
+      <div className="overflow-y-scroll overflow-x-hidden  max-w-[1512px] mx-auto max-xl:px-[5%]  max-sm:px-[3%]  h-full scroll-container">
         <Routes>
-          
+                
+
           <Route path={AppRoutes.home} element={<MainHome />}>
             <Route path="" element={<Home />} />
             <Route path={AppRoutes.team} element={<Team />} />
