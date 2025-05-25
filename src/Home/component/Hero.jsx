@@ -11,7 +11,7 @@ const Hero = () => {
         <img src="/logo.png" className="opacity-30  w-full" />
       </div>
       <div>
-        <p className="tracking-[5px] text-2xl text-center relative  syne-regular">
+        <p className="tracking-[5px] text-2xl text-center relative max-sm:text-xl syne-regular">
           THE CHILLS ROOM
         </p>
 

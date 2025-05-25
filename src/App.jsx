@@ -20,7 +20,7 @@ function Layout() {
       }}
     >
       <ScrollToTop />
-      <div className="overflow-y-scroll overflow-x-hidden  max-w-[1512px] mx-auto max-2xl:px-[5%]    h-full scroll-container">
+      <div className="overflow-y-scroll overflow-x-hidden  max-w-[1512px] mx-auto max-2xl:px-[5%]  max-sm:px-[3%]  h-full scroll-container">
         <Routes>
                 
 
