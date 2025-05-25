@@ -110,7 +110,7 @@ const GamerClique = () => {
           GAMERS CLIQUE{" "}
         </h1>
         <section className="flex  mt-16 max-sm:mt-8 justify-center gap-x-[20%] items-start px-20 max-lg:flex-col max-2xl:px-0 max-2xl:gap-x-0 max-2xl:justify-between max-sm:gap-y-8">
-          <article className="space-y-3 basis-[40%] text-xl z-10 max-sm:text-base">
+          <article className="space-y-3 basis-[40%] text-xl z-10 max-sm:text-base max-sm:text-center">
             <p>
               Our community offers more than just a place to play games. You can
               connect with other gamers, share your passion, and grow; with

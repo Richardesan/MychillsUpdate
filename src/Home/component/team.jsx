@@ -61,6 +61,67 @@ const teamMembers = [
   },
 ];
 
+const mobileteamMembers = [
+    {
+    name: "ABEFE",
+    image: "/abefe1.png",
+    role: "Founder",
+    link: "https://x.com/falemiayo?s=21&t=qqnxSPxnKqrZQrtmX_cuEw",
+    text: `A creative visionary with a multifaceted skill set spanning photography, cinematography, and UI/UX design. As the founder, he is deeply engaged in Web3 and is dedicated to educating and fostering innovation.`,
+  },
+  {
+    name: "SANMI",
+    image: "/sanmi.png",
+    role: "Co-Founder & Admin",
+    link: "https://x.com/mastrix_ayo?s=21&t=qqnxSPxnKqrZQrtmX_cuEw",
+    text: `A creative at heart; a UI/UX designer, Space host and content creator; with an extensive experience in community development and management. An Avid explorer of the blockchain. If he’s not creating then he’s playing games.`,
+  },
+  {
+    name: "Dayo",
+    image: "/dayo1.png",
+    role: "Head of Content",
+    link: "https://x.com/dayothev1?s=21&t=qqnxSPxnKqrZQrtmX_cuEw",
+    text: "Dayo is a content creator with good content and wide varieties of approach to arts and writing; also a good space host, collab manager and gamer.",
+  },
+
+  {
+    name: "TEEBEE",
+    image: "/teebe.png",
+    role: "Co-Founder",
+    link: "https://x.com/oyetolaoluwato5?s=21&t=qqnxSPxnKqrZQrtmX_cuEw",
+    text: `A graphics designer and avid crypto trader. Focused on community building and management.`,
+  },
+
+  {
+    name: "TRUMAN",
+    image: "/truman1.png",
+    role: "Co-Founder & Admin",
+    link: "https://x.com/niyiofweb3?s=21&t=qqnxSPxnKqrZQrtmX_cuEw",
+    text: "A content creator and partnership manager with expertise with NFT projects. Passionate about securing collaborations via mutual relationships with key partnership managers in the web 3.",
+  },
+  {
+    name: "METOY",
+    image: "/metoy1.png",
+    role: "Gamers Clique Captain",
+    link: "https://x.com/metoy__?s=21&t=qqnxSPxnKqrZQrtmX_cuEw",
+    text: `A versatile creative, excelling as a SketchUp artist, painter, and writer. With a growing presence in the web3 community for nearly three years. Currently leads the gaming guild, exploring the intersection of art and Web3 gaming.`,
+  },
+  {
+    name: "BIGTEE",
+    image: "/bigtee1.png",
+    role: "Discord Manager",
+    link: "https://x.com/_curioustee?s=21&t=qqnxSPxnKqrZQrtmX_cuEw",
+    text: `A petroleum engineer with a knack for data analysis and community management. As a skilled data analyst and community manager, I bring a unique blend of technical expertise and interpersonal skills to the table.`,
+  },
+  {
+    name: "BABYBOY",
+    image: "/babyboy1.png",
+    role: `Head Moderator`,
+    link: "https://x.com/nft_babyboy?s=21&t=qqnxSPxnKqrZQrtmX_cuEw",
+    text: `Web3 explorer, with multifaceted talent (3D artist, gamer, interior designer, and Alpha parrot). Passionate about building vibrant communities and pushing innovation boundaries`,
+  },
+];
+
 const supportTeam = [
   {
     name: "IFEOLUWA",
@@ -132,7 +193,7 @@ const Teame = () => {
       <h1 className="text-4xl syne-regular text-center tracking-[8px] max-sm:tracking-[4px] max-sm:text-2xl">
         MEET THE TEAM
       </h1>
-      <p className="text-center max-sm:text-start text-2xl max-sm:text-base dm-sans-regular px-8 max-sm:px-0 mt-5 mb-10">
+      <p className="text-center  text-2xl max-sm:text-base dm-sans-regular px-8 max-sm:px-0 mt-5 mb-10">
         A collection of passionate innovators, creators, and strategists, each
         offering their expertise. With a commitment to expand the landmark of
         Web3 and focus on creating a community where creativity, content
@@ -165,7 +226,7 @@ const Teame = () => {
             <div
               key={member.name}
               className={`absolute cursor-pointer transition-all hover:scale-105 ${positions[index]}`}
-              onClick={() => setSelectedMember(member)}
+              onMouseEnter={() => setSelectedMember(member)}
             >
               <div className="max-w-56 max-2xl:w-52 w-40 sm:w-48 md:w-56 lg:w-64 xl:w-72">
                 <img
@@ -183,7 +244,7 @@ const Teame = () => {
 
         {/* Fallback stacked version for mobile */}
         <div className="2xl:hidden flex flex-wrap justify-center gap-8 mt-8 ">
-          {myTeam.map((member) => (
+          {mobileteamMembers.map((member) => (
             <div
               key={member.name}
               className="w-[140px] sm:w-[160px] md:w-[180px] cursor-pointer text-center"

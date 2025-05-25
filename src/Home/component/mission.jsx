@@ -7,10 +7,10 @@ const Mission = () => {
   };
   return (
     <div className="pb-12 max-sm:pb-16 text-white  relative rotate-0 ">
-      <p className="text-4xl max-sm:text-3xl text-center syne-regular tracking-[4px]">
+      <p className="text-4xl max-sm:text-2xl text-center syne-regular tracking-[4px]">
         WHO WE ARE?
       </p>
-      <p className="dm-sans-regular text-2xl leading-10 text-center mt-10 z-10 max-sm:text-lg max-sm:text-start">
+      <p className="dm-sans-regular text-2xl leading-10 text-center mt-10 z-10 max-sm:text-lg ">
         Founded by a passionate group of Web3 pioneers, The Chills Room is a
         diverse and dynamic community of creators artists, gamers, developers,
         designer, traders, and more. Our members come from all corners of the

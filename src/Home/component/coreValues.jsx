@@ -3,7 +3,7 @@ import Card from "./card";
 
 const CoreValues = () => {
   return (
-    <div className="text-white pb-28 max-sm:pb-12 relative ">
+    <div className="text-white pb-28  relative ">
       <div className="absolute left-0 top-0 w-full h-full  z-20 opacity-20 flex items-center   overflow-hidden"></div>
 
       <section className="flex items-start gap-x-20 max-2xl:gap-x-10 max-lg:flex-col max-lg:gap-y-10">

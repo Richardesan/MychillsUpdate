@@ -11,18 +11,18 @@ const Card = ({ images }) => {
       className="relative h-[200px] min-w-[200px]  rounded-xl flex justify-center items-center  "
     >
       <AnimatePresence>
-        <img src={images} className="w-full h-full object-contain" />
-        {showOverlay && (
+        <img src={images} className="w-full h-full object-contain"/>
+        {/* {showOverlay && (
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={{ scale: 1 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            exit={{ opacity: 1 }}
             className="absolute inset-0 z-10 flex justify-center items-center"
           >
-            <div className="absolute bg-black opacity-50 h-full w-full pointer-events-none" />
+             <div className="absolute bg-black opacity-50 h-full w-full pointer-events-none" /> 
           
           </motion.div>
-        )}
+        )} */}
       </AnimatePresence>
     </motion.div>
   );

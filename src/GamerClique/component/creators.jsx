@@ -56,7 +56,7 @@ Backed by Metalist, CardAhoyGame is an thrilling gameplay with a first....`,
       <p className="text-center text-3xl my-4">
         Join Us on our amazing Storytelling journey!
       </p>
-      <div className="flex justify-between px-32 max-xl:px-0 max-sm:flex-col max-sm:gap-y-7 max-sm:mt-5 mt-14">
+      <div className="flex justify-between px-32 max-xl:px-0 max-sm:flex-col max-sm:gap-y-7 max-sm:mt-5 mt-14 max-sm:text-center">
         <p className="basis-[40%]">
           Our Content creators are using their platforms to educate and engage
           the audience about Web3, NFTs, Web3 games and every other niche. They
@@ -73,7 +73,7 @@ Backed by Metalist, CardAhoyGame is an thrilling gameplay with a first....`,
           understandable.
         </p>
       </div>
-      <div className="dm-sans-regular text-xl   p-3 flex items-center justify-center gap-x-2 rounded-full border z-40 border-white/40 w-fit mx-auto my-20 max-sm:my-7">
+      <div className="dm-sans-regular text-xl   p-3 flex items-center justify-center gap-x-2 rounded-full border z-40 border-white/40 w-fit mx-auto my-20  max-sm:mb-7">
         <button className={`${btnStyle} bg-white text-black max-sm:text-sm rounded-full`}>
           EXPLORE SOME OF OUR CREATORS{" "}
         </button>

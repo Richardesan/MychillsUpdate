@@ -4,14 +4,14 @@ import { Link, useNavigate } from "react-router-dom";
 import { AppRoutes } from "../utils/route";
 import Button from "./button";
 
-const tabs = ["Home", "About", "Team", "Partners", "Game Clique"];
+const tabs = ["Home", "About", "Team", "Partners", "Gamers Clique"];
 
 const routeMap = {
   Home: "/",
   About: AppRoutes.about,
   Team: AppRoutes.team,
   Partners: AppRoutes.partners,
-  "Game Clique": AppRoutes.community,
+  "Gamers Clique": AppRoutes.community,
 };
 
 const ChipTabs = ({ onClickItem }) => {
@@ -89,7 +89,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-white flex justify-between items-center left-0 fixed top-0 bg-bak w-full z-50  px-[9%] max-xl:px-[7%]  max-sm:px-[3%] py-4 backdrop-blur-md">
+    <nav className="text-white flex justify-between items-center left-0 fixed top-0  w-full z-50  px-[9%] max-xl:px-[7%]  max-sm:px-[3%] py-4 backdrop-blur-md">
       <Link to={AppRoutes.home}>
         <section className="flex items-center font-bold">
           <div className="w-[72px] h-[72px]">
@@ -109,10 +109,10 @@ const Navbar = () => {
 
       {/* Mobile menu button */}
       <div
-        className="max-lg:block hidden bg-black z-20 rounded-full px-4 py-1.5 text-sm cursor-pointer font-bold "
+        className="max-lg:block hidden bg-primaryCol z-20 rounded-full px-4 py-1.5 text-sm cursor-pointer font-bold "
         onClick={() => setSidebarOpen(true)}
       >
-        menu
+        Menu
       </div>
       <a href="https://calendly.com/thechillsroom/30min" target="_blank" className="max-xl:hidden">
         <Button text={"Reach out to us"} />
