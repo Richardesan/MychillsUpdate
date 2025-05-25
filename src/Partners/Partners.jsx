@@ -26,7 +26,7 @@ const Partners = () => {
         OTHER PROJECTS WE HAVE COLLABORATED WITH
       </h1>
       <Infinitescroll />
-      <Team />
+      {/* <Team /> */}
       <Testimony />
     </div>
   );

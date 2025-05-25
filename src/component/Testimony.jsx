@@ -25,7 +25,7 @@ const Testimony = () => {
 `,
       dp: "/blanket.png",
       author: "BLANKET",
-      role: "Partnerships,  AP Collective - DN3 Ventures",
+      role: "Partnership Manager",
     },
     {
       id: 2,

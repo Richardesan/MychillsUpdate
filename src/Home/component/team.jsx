@@ -34,7 +34,7 @@ const teamMembers = [
   {
     name: "TRUMAN",
     image: "/truman1.png",
-    role: "Co-Founder & Admin",
+    role: "Collab Manager",
     link: "https://x.com/niyiofweb3?s=21&t=qqnxSPxnKqrZQrtmX_cuEw",
     text: "A content creator and partnership manager with expertise with NFT projects. Passionate about securing collaborations via mutual relationships with key partnership managers in the web 3.",
   },
@@ -95,7 +95,7 @@ const mobileteamMembers = [
   {
     name: "TRUMAN",
     image: "/truman1.png",
-    role: "Co-Founder & Admin",
+    role: "Collab Manager",
     link: "https://x.com/niyiofweb3?s=21&t=qqnxSPxnKqrZQrtmX_cuEw",
     text: "A content creator and partnership manager with expertise with NFT projects. Passionate about securing collaborations via mutual relationships with key partnership managers in the web 3.",
   },
@@ -140,7 +140,7 @@ const supportTeam = [
   {
     name: "TMAMA",
     image: "/TMAMA.png",
-    role: "Collab Manager",
+    role: "Assistant Head Mod",
     link: "https://x.com/tee_monera?s=21&t=qqnxSPxnKqrZQrtmX_cuEw",
     text: `Navigating web3, as a researcher and a moderator. When not writing, you’ll find me sharing cute cat content and ranting about web3 games.`,
   },
@@ -185,6 +185,7 @@ const Teame = () => {
   const [selectedMember, setSelectedMember] = useState(null);
   const [selectedTeam, setSelectedTeam] = useState(true);
   const myTeam = selectedTeam ? teamMembers : supportTeam;
+  const mobileTeam = selectedTeam ? mobileteamMembers : supportTeam;
   const btnStyle =
     "hover:scale-105 active:scale-95 transition-all duration-100 uppercase px-4 py-2 rounded-full";
 
@@ -200,15 +201,15 @@ const Teame = () => {
         creation, gaming, and other innovations thrive.{" "}
       </p>
       <div className="dm-sans-regular text-xl  max-sm:text-xs max-sm:p-1 p-3 flex items-center justify-center gap-x-2 rounded-full border border-white/40 w-fit mx-auto">
-        <button
+        <div
           className={`${btnStyle} ${selectedTeam ? "bg-white text-black" : ""}`}
           onClick={() => {
             setSelectedTeam(true);
           }}
         >
           Core team
-        </button>
-        <button
+        </div>
+        <div
           className={`${btnStyle} ${
             !selectedTeam ? "bg-white text-black" : ""
           }`}
@@ -217,7 +218,7 @@ const Teame = () => {
           }}
         >
           Support
-        </button>
+        </div>
       </div>
 
       <div className="mt-5 ">
@@ -244,7 +245,7 @@ const Teame = () => {
 
         {/* Fallback stacked version for mobile */}
         <div className="2xl:hidden flex flex-wrap justify-center gap-8 mt-8 ">
-          {mobileteamMembers.map((member) => (
+          {mobileTeam.map((member) => (
             <div
               key={member.name}
               className="w-[140px] sm:w-[160px] md:w-[180px] cursor-pointer text-center"
@@ -321,12 +322,12 @@ const Teame = () => {
               <p className="text-xl max-sm:text-base max-sm:px-3 break-words syne-normal max-w-[42rem] text-center mt-5">
                 {selectedMember.text}
               </p>
-              <button
+              <div
                 className="absolute top-2 right-3 text-5xl font-bold"
                 onClick={() => setSelectedMember(null)}
               >
                 &times;
-              </button>
+              </div>
             </div>
           </motion.div>
         )}

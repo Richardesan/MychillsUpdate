@@ -3,6 +3,7 @@ import LoopingVideo from "./component/LoopingVideo";
 import Button from "../component/button";
 import Card from "./component/card";
 import Creators from "./component/creators";
+import Team from "./component/team";
 
 const GamerClique = () => {
   const cardData = [
@@ -135,6 +136,7 @@ const GamerClique = () => {
           </article>
         </section>
       </section>
+      <Team />
 
       <h1 className="text-4xl syne-regular text-center tracking-widest mt-24 mb-20 max-sm:mb-10 max-sm:mt-12 max-sm:text-xl max-lg:text-2xl">
         OUR RECENT PLAYTESTS & GAME NIGHTS
